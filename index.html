@@ -234,7 +234,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 			<p class="w3ls_head_para w3ls_head_para1">send Me a message</p>
 			<div class="w3_mail_grids">
 
-				<form method="post" action="https://script.google.com/macros/s/AKfycbzR4jpem7osx7NYbPnQd0p8cuErFroTFBsyQmNUPBT8MNReEhcYl-rl-ePiJpjjBhU/exec" id="gform">
+				<form action="" id="gform">
 
 					<div class="col-md-6 w3_agile_mail_grid">
 						<span class="input input--ichiro">
@@ -432,14 +432,14 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 	</script>
 <!-- //here ends scrolling icon -->
 <script>
-	$("#submit-form").submit((e)=>{
+	$("#gform").submit((e)=>{
 		e.preventDefault()
 		$.ajax({
-			url:"https://script.google.com/macros/s/AKfycbwloCKJI6Zu0XiT-tMS_ZS2_UsV7IGfLfnWYa8Y_A/exec",
-			data:$("#submit-form").serialize(),
+			url:"https://script.google.com/macros/s/AKfycbzR4jpem7osx7NYbPnQd0p8cuErFroTFBsyQmNUPBT8MNReEhcYl-rl-ePiJpjjBhU/exec",
+			data:$("#gform").serialize(),
 			method:"post",
 			success:function (response){
-				alert("Form submitted successfully")
+				alert("gform")
 				window.location.reload()
 				//window.location.href="https://google.com"
 			},
